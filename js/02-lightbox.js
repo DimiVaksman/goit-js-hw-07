@@ -24,6 +24,9 @@ galleryContainer.innerHTML = addGalleryItems;
 
 galleryContainer.addEventListener('click' , openModalperClick)
 
+new SimpleLightbox('.gallery a', {
+    captionDelay: 250,
+ });
 
 function openModalperClick (e){
     e.preventDefault()
@@ -32,8 +35,5 @@ function openModalperClick (e){
     return
     }
 
-    new SimpleLightbox('.gallery a', {
-        captionDelay: 250,
-     });
 
 }
